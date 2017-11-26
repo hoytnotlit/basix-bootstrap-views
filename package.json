@@ -1,0 +1,20 @@
+{
+  "name": "basix-bootstrap-views",
+  "version": "0.0.8",
+  "description": "Simple framework for splitting the HTML code into smaller parts, views.",
+  "main": "basix.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "simple",
+    "split",
+    "html",
+    "code",
+    "parts",
+    "views",
+    "view"
+  ],
+  "author": "Pasi Talvitie",
+  "license": "GPL-3.0"
+}

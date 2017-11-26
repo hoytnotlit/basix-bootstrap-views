@@ -1,0 +1,54 @@
+<!-- basix.js
+
+Author: Pasi Talvitie
+Date: 26.11.2017
+
+License: General Public License 3.0 
+
+THIS IS A SAMPLE PAGE.
+-->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+<header>
+<bx-view id="navbar.view"></bx-view>
+</header>
+
+<div class="container">
+	<bx-view id="jumbotron.view"></bx-view>
+</div>
+
+<div class="row">
+	<div class="col-sm-4">	
+	<!-- Add view and set its id correspond to its filename. -->
+	<bx-view id="table.view"></bx-view>
+	</div>
+	<div class="col-sm-4">	
+	<!-- Add view and set its id correspond to its filename. -->
+	<bx-view id="form.view"></bx-view>
+	</div>
+	<div class="col-sm-4">	
+	<!-- Add view and set its id correspond to its filename. -->
+	<bx-view id="well.view"></bx-view>
+	</div>
+</div>
+
+
+</body>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Add basix.js -->
+  <script src="basix.js"></script>
+  </html>

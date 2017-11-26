@@ -1,0 +1,10 @@
+      <div class="jumbotron">
+        <h1>basix-bootstrap-views</h1>
+        <p>Welcome to basix-bootstrap-views</p>
+        <p>Each bootstrap html element is in its own view, handled by Javascript.</p>
+        <p>Views can be added to project <b>/views</b> folder and then by adding the filename into <b>/config/config.js</b></p>
+        <p>Styles can be added to project by putting them into <b>styles</b> folder and by adding a reference into <b>/config/config.js</b></p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="#">Click for more</a>
+        </p>
+      </div>
