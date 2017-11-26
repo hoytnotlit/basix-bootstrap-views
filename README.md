@@ -32,13 +32,18 @@ var bxConfig = {
 
 ```
 
-Finally, add corresponding pages and styles into their own folders. Remember to name them as named in config.js
+Then, add corresponding pages and styles into their own folders. Remember to name them as named in config.js
 
 ```
 For example:
 "navbar.view" -> /view/navbar.view
 
 ```
+And finally, add tags that link to your view:
+```
+<bx-view id="nav.view"></bx-view>
+```
+
 
 ### Prerequisites
 
