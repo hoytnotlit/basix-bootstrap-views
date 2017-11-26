@@ -3,7 +3,7 @@ Simple framework for splitting the HTML code into smaller parts, views.
 
 ## Getting Started
 
-Add Javascript references to HTML document
+Add Javascript references to the bottom within the body tag.
 
 ```
 <script src="basix-bootstrap-views.js"></script>
