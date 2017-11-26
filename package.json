@@ -1,6 +1,6 @@
 {
   "name": "basix-bootstrap-views",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple framework for splitting the HTML code into smaller parts, views.",
   "main": "basix.js",
   "scripts": {
