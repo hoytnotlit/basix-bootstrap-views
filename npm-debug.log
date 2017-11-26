@@ -1,0 +1,90 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/pasi/basix-bootstrap-views',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/pasi/.npm/basix-bootstrap-views/1.0.0/package.tgz not in flight; packing
+9 info lifecycle basix-bootstrap-views@1.0.0~prepublish: basix-bootstrap-views@1.0.0
+10 silly lifecycle basix-bootstrap-views@1.0.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/home/pasi/.npm/basix-bootstrap-views/1.0.0/package.tgz',
+11 verbose tar pack   '/home/pasi/basix-bootstrap-views' ]
+12 verbose tarball /home/pasi/.npm/basix-bootstrap-views/1.0.0/package.tgz
+13 verbose folder /home/pasi/basix-bootstrap-views
+14 verbose addLocalTarball adding from inside cache /home/pasi/.npm/basix-bootstrap-views/1.0.0/package.tgz
+15 silly cache afterAdd basix-bootstrap-views@1.0.0
+16 verbose afterAdd /home/pasi/.npm/basix-bootstrap-views/1.0.0/package/package.json not in flight; writing
+17 verbose afterAdd /home/pasi/.npm/basix-bootstrap-views/1.0.0/package/package.json written
+18 silly publish { name: 'basix-bootstrap-views',
+18 silly publish   version: '1.0.0',
+18 silly publish   description: 'Simple framework for splitting the HTML code into smaller parts, views.',
+18 silly publish   main: 'basix.js',
+18 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+18 silly publish   keywords: [ 'simple', 'split', 'html', 'code', 'parts', 'views', 'view' ],
+18 silly publish   author: { name: 'Pasi Talvitie' },
+18 silly publish   license: 'GPL-3.0',
+18 silly publish   readme: '# basix-bootstrap-views\nSimple framework for splitting the HTML code into smaller parts, views.\n\n## Getting Started\n\nAdd Javascript references to HTML document\n\n```\n<script src="basix-bootstrap-views.js"></script>\n\n```\n\nThen, add references to the /config/config.js\n\n```\nvar bxConfig = {\n\n\t// Add the filename here and then add the file into \'views\' folder.\n\tviews: [\n\t\t"navbar.view",\n\t\t"jumbotron.view",\n\t\t"table.view",\n\t\t"form.view",\n\t\t"well.view"\n\t],\n\t// Add the filename and then add the file into \'styles\' folder.\n\tstyles: [\n\t\t"custom.style"\n\t]\n\n};\n\n```\n\nFinally, add corresponding pages and styles into their own folders. Remember to name them as named in config.js\n\n```\nFor example:\n"navbar.view" -> /view/navbar.view\n\n```\n\n### Prerequisites\n\nNo prequisites\n\n### Creating styles\n\nStyle files need to have everything within their <style></style> -tags.\n\n```\n<style>\nbody {background-color: white;}\n</style>\n```\n\n## Additional\n\nCreate your models and controllers and start coding!\n\n## Used With\n\n* https://getbootstrap.com/ - Bootstrap Framework\n\n\n## Authors\n\n* **Pasi Talvitie** - *Initial*\n\n\n## License\n\nThis project is licensed under the General Public License - see the [LICENSE](LICENSE) file for details\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '3e553299cd544847e045b879aa738a07b84eb169',
+18 silly publish   _id: 'basix-bootstrap-views@1.0.0',
+18 silly publish   _shasum: 'cb093f6f3bdfab2071b9ab044bed634c80a6df83',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name basix-bootstrap-views
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/basix-bootstrap-views
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /home/pasi/.npm/basix-bootstrap-views/1.0.0/package.tgz
+26 verbose request uri https://registry.npmjs.org/basix-bootstrap-views
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 4:54:05 PM
+29 verbose request using bearer token for auth
+30 verbose request id 5fb61db033788917
+31 http request PUT https://registry.npmjs.org/basix-bootstrap-views
+32 http 403 https://registry.npmjs.org/basix-bootstrap-views
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '91',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Sun, 26 Nov 2017 21:54:06 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-ams4151-AMS',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1511733246.675687,VS0,VE845',
+33 verbose headers   vary: 'Accept-Encoding, Accept' }
+34 verbose request invalidating /home/pasi/.npm/registry.npmjs.org/basix-bootstrap-views on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: You cannot publish over the previously published version 1.0.0. : basix-bootstrap-views
+36 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid basix-bootstrap-views
+39 verbose cwd /home/pasi/basix-bootstrap-views
+40 error Linux 2.6.32-042stab113.17
+41 error argv "/usr/bin/nodejs" "/usr/bin/npm" "publish"
+42 error node v4.2.6
+43 error npm  v3.5.2
+44 error code E403
+45 error You cannot publish over the previously published version 1.0.0. : basix-bootstrap-views
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
